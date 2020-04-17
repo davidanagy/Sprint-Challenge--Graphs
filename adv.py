@@ -58,6 +58,12 @@ traversal_path = []
     #             break
     #     self.fully_explored = fully_explored
 
+"""
+Q: It is very difficult to calculate the shortest possible path that traverses the entire graph. Why?
+
+A: Because each move impacts every other move. Whether moving E or W is faster depends on what you do
+after you move E and W, and with so many possibilities it's extremely difficult to calculate that.
+"""
 
 class Grid:
     def __init__(self):
